@@ -74,7 +74,7 @@ function checkVictory(){
             winingMessage.innerText = "A máquina venceu!";
             winingMessage.style.backgroundColor = "red";
             enemyScore++;
-            console.log(playerScore);
+            console.log(enemyScore);
             enemyScorePlace.textContent = enemyScore;
 
         }
@@ -84,7 +84,7 @@ function checkVictory(){
             winingMessage.innerText = "A máquina venceu!";
             winingMessage.style.backgroundColor = "red";
             enemyScore++;
-            console.log(playerScore);
+            console.log(enemyScore);
             enemyScorePlace.textContent = enemyScore;
 
         }else if(enemyOption == "pedra"){
@@ -112,7 +112,7 @@ function checkVictory(){
             winingMessage.innerText = "A máquina venceu!";
             winingMessage.style.backgroundColor = "red";
             enemyScore++;
-            console.log(playerScore);
+            console.log(enemyScore);
             enemyScorePlace.textContent = enemyScore;
 
         }else if(enemyOption == "tesoura"){
