@@ -4,6 +4,10 @@ var playerOption = ""
 var enemyOption = ""
 const enemyOptions = document.querySelectorAll(".enemy-options img");
 const winingMessage = document.querySelector(".wining-message h2");
+var playerScore = 0;
+var enemyScore = 0;
+var playerScorePlace = document.querySelector(".player-score h1");
+var enemyScorePlace = document.querySelector(".enemy-score h1");
 
 //metodo principal de seleção 
 for(var i = 0; i < elementos.length; i++){
@@ -62,10 +66,16 @@ function checkVictory(){
         }else if(enemyOption == "pedra"){
             winingMessage.innerText = "Você venceu!";
             winingMessage.style.backgroundColor = "green";
+            playerScore++;
+            console.log(playerScore);
+            playerScorePlace.textContent = playerScore;
 
         }else if(enemyOption == "tesoura"){
             winingMessage.innerText = "A máquina venceu!";
             winingMessage.style.backgroundColor = "red";
+            enemyScore++;
+            console.log(playerScore);
+            enemyScorePlace.textContent = enemyScore;
 
         }
     }
@@ -73,6 +83,9 @@ function checkVictory(){
         if(enemyOption == "papel"){
             winingMessage.innerText = "A máquina venceu!";
             winingMessage.style.backgroundColor = "red";
+            enemyScore++;
+            console.log(playerScore);
+            enemyScorePlace.textContent = enemyScore;
 
         }else if(enemyOption == "pedra"){
             winingMessage.innerText = "Empate";
@@ -81,6 +94,9 @@ function checkVictory(){
         }else if(enemyOption == "tesoura"){
             winingMessage.innerText = "Você venceu!";
             winingMessage.style.backgroundColor = "green";
+            playerScore++;
+            console.log(playerScore);
+            playerScorePlace.textContent = playerScore;
 
         }
     }
@@ -88,10 +104,16 @@ function checkVictory(){
         if(enemyOption == "papel"){
             winingMessage.innerText = "Você venceu!";
             winingMessage.style.backgroundColor = "green";
+            playerScore++;
+            console.log(playerScore);
+            playerScorePlace.textContent = playerScore;
 
         }else if(enemyOption == "pedra"){
             winingMessage.innerText = "A máquina venceu!";
             winingMessage.style.backgroundColor = "red";
+            enemyScore++;
+            console.log(playerScore);
+            enemyScorePlace.textContent = enemyScore;
 
         }else if(enemyOption == "tesoura"){
             winingMessage.innerText = "Empate";
